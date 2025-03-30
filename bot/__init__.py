@@ -10,10 +10,10 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 
 class ENV_VARS(object):
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME")
+    API_ID = int(os.environ.get("API_ID", "23914333"))
+    API_HASH = os.environ.get("API_HASH", "08a627b6d82488208fc1e0d45a3d2297")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8077061453:AAFMQmy2tDlUdoqjE6HHjRkG5lfmuo9W_AI")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "teravideodownloader099_bot")
     #AUTH_USER = int(os.environ.get("AUTH_USER", 5071059420))
 
 
